@@ -3,17 +3,6 @@
   <img src="assets/light/hero.svg" width="100%" alt="Akshay Bajpai. Wrangling AI, mostly after dark. I build production LLM systems that answer to humans: agents, retrieval, and text-to-SQL that shows its work and waits for a person before it runs.">
 </picture>
 
-<p align="center">
-  <a href="https://www.akshaybajpai.com"><b>akshaybajpai.com</b></a>
-  &nbsp;&nbsp;✦&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/ax5hay"><b>LinkedIn</b></a>
-  &nbsp;&nbsp;✦&nbsp;&nbsp;
-  <a href="https://x.com/ax5hay"><b>X</b></a>
-  &nbsp;&nbsp;✦&nbsp;&nbsp;
-  <a href="https://github.com/ax5hay"><b>@ax5hay</b></a> <sub>(personal &amp; open work)</sub>
-  &nbsp;&nbsp;✦&nbsp;&nbsp;
-  <a href="mailto:contact@akshaybajpai.com"><b>contact@akshaybajpai.com</b></a>
-</p>
 
 <br>
 
@@ -71,7 +60,7 @@ I wrote most of that codebase: two of every three commits, the agent loops, the 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/dark/spectra.svg">
-  <img src="assets/light/spectra.svg" width="100%" alt="Spectra. 334 technologies across 13 domains, each domain drawn as an emission spectrum with one line per technology: languages, frontend, charts, backend, AI and LLM systems, machine learning, vision and documents, data stores, infrastructure, observability and security, testing, desktop and edge, integrations.">
+  <img src="assets/light/spectra.svg" width="100%" alt="Spectra. 333 technologies across 13 domains, each domain drawn as an emission spectrum with one line per technology: languages, frontend, charts, backend, AI and LLM systems, machine learning, vision and documents, data stores, infrastructure, observability and security, testing, desktop and edge, integrations.">
 </picture>
 
 <details>
@@ -87,7 +76,7 @@ I wrote most of that codebase: two of every three commits, the agent loops, the 
 - **Vision, audio & documents.** OpenCV, YOLO / Ultralytics, MediaPipe, dlib, supervision, Pose & posture estimation, PPE detection, ANPR (number plates), Multi-signal threat scoring, Pillow, imutils, RTSP ingest, FFmpeg, PyAV, MoviePy, sounddevice / pydub, EasyOCR, Tesseract, PyMuPDF, pdfplumber, PyPDF2, pdf-parse / pdf.js, Docnet, ReportLab, python-docx, EPUB (VersOne), NetVips, sharp, node-canvas, QR codes, ExcelJS / xlsx, openpyxl, CsvHelper
 - **Data stores & ORMs.** PostgreSQL, MySQL / MariaDB, Redis, SQLite, SQLite FTS5, Neo4j, MinIO / S3, Weaviate (vector), FAISS (vector), pgvector, Supabase, Prisma, Drizzle ORM, SQLAlchemy, Alembic, asyncpg, psycopg, sqlglot (SQL ASTs), Entity Framework Core, PL/pgSQL, PostgreSQL row-level security, JSONB storage, cache-manager / EasyCaching, Google Sheets as a store
 - **Infrastructure & delivery.** Docker, Docker Compose, Kubernetes, Helm, Terraform, Ansible, AWS, AWS CDK, AWS Lambda, Amazon SQS, API Gateway WebSockets, Mangum, Amazon EKS, Amazon RDS, ElastiCache, Amazon ECR, VPC networking, vSphere, Nginx, GitHub Actions, Dependabot, GitHub Pages, GitHub Releases, Signed auto-updates, NSIS & DMG installers, Relocatable Python runtime, Docker Buildx, crane, Turborepo, pnpm workspaces, npm workspaces, uv, Make, Air-gapped, zero-trust deploys
-- **Observability & security.** Prometheus, Grafana, Loki & Promtail, OpenTelemetry, Arize Phoenix tracing, Pino, Winston, Loguru, Serilog, tracing (Rust), TracePulse (my own), Trivy, oauth2-proxy, OS credential store (keyring), Content Security Policy, Secret & PII detection, CodeQL / SARIF, SonarAnalyzer, Codecov, Husky & lint-staged, commitlint, pre-commit, AES-GCM / ring, rustls, cryptography (py), SHA-2 / HMAC, Data Protection API
+- **Observability & security.** Prometheus, Grafana, Loki & Promtail, OpenTelemetry, Arize Phoenix tracing, Pino, Winston, Loguru, Serilog, tracing (Rust), Trivy, oauth2-proxy, OS credential store (keyring), Content Security Policy, Secret & PII detection, CodeQL / SARIF, SonarAnalyzer, Codecov, Husky & lint-staged, commitlint, pre-commit, AES-GCM / ring, rustls, cryptography (py), SHA-2 / HMAC, Data Protection API
 - **Testing & code quality.** Vitest, Jest, pytest, pytest-asyncio, Playwright, Selenium, Testing Library, jsdom, Supertest, xUnit, NSubstitute, BenchmarkDotNet, criterion (Rust), cargo test, Clippy (pedantic), rustfmt, svelte-check, Golden-set evals, Metamorphic SQL probes, Karma, ESLint, typescript-eslint, Prettier, Ruff, Black, mypy, Pylint, flake8, markdownlint, Storybook a11y
 - **Desktop, edge & automation.** Tauri 2, Electron, electron-vite, electron-builder, System tray & menu bar apps, Win32 power requests, IOKit / Core Foundation, Global hotkeys, PySide6 / Qt, Tkinter, Streamlit, NiceGUI, Rust edge agent, sysinfo, Windows API (Rust), Playwright automation, Selenium scraping, BeautifulSoup / lxml, Cheerio, HtmlAgilityPack, SurveyCTO, ngrok
 - **Integrations & services.** Twilio, WhatsApp & Instagram channels, Nodemailer, MailKit, Google Sheets API, Google Calendar, Apps Script / clasp, Naukri.com automation, OpenGraph & sitemaps, Webhooks
@@ -98,20 +87,12 @@ I wrote most of that codebase: two of every three commits, the agent loops, the 
 
 ## ✦ Catalogue
 
-Selected objects, numbered the way astronomers number theirs. The private ones are described but not linked.
+The objects in the plates above, numbered the way astronomers number theirs. Both are private, so they are described here rather than linked.
 
 | No. | Object | What it is | Instruments |
 | :-- | :-- | :-- | :-- |
 | `BJP 001` | **Agency AI platform** <sub>private · work</sub> | The system in the orrery: intake, knowledge and reports assistants for fertility and surrogacy agencies, with one gateway and one API | Python · FastAPI · React · AWS CDK · MySQL · Redis |
 | `BJP 002` | **Reports agent** <sub>private · work</sub> | Plain-English reporting over 193 tables and 8,000+ approved columns. Every query is grammar-checked, previewed, and confirmed by an admin before it runs | sqlglot · agentic tool loop · SQS · WebSockets |
-| `BJP 003` | [**KeepMeAwake**](https://github.com/ax5hay/KeepMeAwake) | Keeps a laptop awake by asking the OS properly, never with a fake keypress. 27 themes, about 5 MB in the tray | Rust · Tauri 2 · Svelte 5 · Win32 · IOKit |
-| `BJP 004` | [**AURIXA**](https://github.com/ax5hay/AURIXA) | Multi-tenant care operations with governed LLM assistance over one orchestration and safety layer | Next.js · Fastify · FastAPI · Postgres · Turborepo |
-| `BJP 005` | [**Vigilix**](https://github.com/ax5hay/Vigilix) | A live, AI-annotated multi-camera video wall with YOLO overlays and incident alerts | React · FastAPI · YOLO · RTSP |
-| `BJP 006` | [**DADM**](https://github.com/ax5hay/DADM-Aiximius) | A distributed defensive-AI mesh: on-device anomaly detection, federated updates, air-gap capable | Rust · Python · ONNX · Neo4j |
-| `BJP 007` | [**GHDA**](https://github.com/ax5hay/GHDA-SaaS) | Turns messy, multilingual government health surveys into structured data and gap analysis | Fastify · FastAPI · OCR · MinIO · Prometheus |
-| `BJP 008` | [**OCR-LLM-DIST**](https://github.com/ax5hay/OCR-LLM-DIST) | Document chat that never leaves the machine. OCR ingestion feeds local models | FastAPI · Next.js · Ollama · LM Studio |
-| `BJP 009` | [**akshaybajpai.com**](https://github.com/ax5hay/akshaybajpai.com) | A personal site published as a set of numbered architectural drawings, with an x-ray lens over any part | Next.js 15 · View Transitions · static export |
-| `BJP 010` | [**Alzheimer's thesis**](https://github.com/ax5hay/AlzheimersDiagnosis) | MSc research benchmarking nine models on OASIS biomarkers, and a peer-reviewed book chapter on ML for diagnosis | scikit-learn · ISBN 978-3-031-60815-5 |
 
 <br>
 
