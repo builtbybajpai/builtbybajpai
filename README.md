@@ -18,7 +18,7 @@
 <br>
 
 > [!NOTE]
-> **Why this profile looks empty.** This is my work account. Everything it holds is private, so the repository list stays blank. The plates below are drawn from the git history behind it.
+> **Why this profile looks empty.** This is my work account, and apart from this page everything it holds is private. The plates below are drawn from the git history behind it.
 
 <br>
 
