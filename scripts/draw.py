@@ -520,7 +520,7 @@ def orrery(t: dict) -> str:
 
 
 # ───────────────────────────── PLATE V · SPECTRA ─────────────────────────────
-EXTRA = {"Infrastructure & delivery": ["AWS CDK", "AWS Lambda", "Amazon SQS", "API Gateway WebSockets", "Mangum"]}
+EXTRA: dict[str, list[str]] = {}
 SKIP = {"Leadership & practice"}
 SHORT = {
     "Machine learning & data science": "Machine learning",
@@ -529,19 +529,13 @@ SHORT = {
     "Observability & security": "Observability & security",
 }
 FEATURED = {
-    "Languages": "Python · TypeScript · Rust · C# · SQL",
-    "Frontend & UI": "React · Next.js · Svelte 5 · Astro · Tailwind",
-    "Charts & dataviz": "Recharts · ECharts · Observable Plot",
-    "Backend & APIs": "FastAPI · Fastify · NestJS · ASP.NET Core",
-    "AI & LLM systems": "Claude · OpenRouter · RAG · MCP agents",
-    "Machine learning & data science": "PyTorch · TensorFlow · scikit-learn · ONNX",
-    "Vision, audio & documents": "OpenCV · YOLO · Whisper · OCR",
-    "Data stores & ORMs": "Postgres · MySQL · Redis · pgvector · Neo4j",
-    "Infrastructure & delivery": "AWS CDK · Lambda · Terraform · Kubernetes",
-    "Observability & security": "OpenTelemetry · Grafana · Phoenix · Trivy",
-    "Testing & code quality": "pytest · Playwright · Vitest · golden-set evals",
-    "Desktop, edge & automation": "Tauri 2 · Electron · Win32 · IOKit",
-    "Integrations & services": "Twilio · WhatsApp · Google APIs · webhooks",
+    "Languages": "Python · TypeScript · SQL · Bash",
+    "AI & LLM systems": "Claude · OpenRouter · RAG · text-to-SQL",
+    "Backend & APIs": "FastAPI · Pydantic · JWT · WebSockets",
+    "Data stores & SQL": "MySQL · Redis · SQLAlchemy · sqlglot",
+    "Cloud & infrastructure": "AWS CDK · Lambda · SQS · RDS",
+    "Frontend": "React · Preact · Vite",
+    "Testing & quality": "pytest · Playwright · Vitest · Ruff",
 }
 RAINBOW = ["#7a2cff", "#3d4dff", "#00a8ff", "#00d4b0", "#5ee05a", "#ffe24a", "#ff9a2e", "#ff3d3d"]
 
@@ -589,9 +583,9 @@ def spectra(t: dict, inv: list[tuple[str, list[str]]]) -> str:
     body = [bg]
     body.append(
         f'<text x="56" y="56" font-family="{MONO}" font-size="15" letter-spacing="4.5" fill="{t["dim"]}">PLATE V  ·  SPECTRA</text>'
-        f'<text x="{W-56}" y="56" text-anchor="end" font-family="{SERIF}" font-style="italic" font-size="20" fill="{t["ink"]}">Every line is one technology in use.</text>'
+        f'<text x="{W-56}" y="56" text-anchor="end" font-family="{SERIF}" font-style="italic" font-size="20" fill="{t["ink"]}">Every line is one technology in this work.</text>'
         f'<line x1="56" y1="76" x2="{W-56}" y2="76" stroke="{t["rule"]}" stroke-width="1"/>'
-        f'<text x="56" y="112" font-family="{SERIF}" font-size="26" fill="{t["ink"]}">{total} technologies across {len(inv)} domains</text>'
+        f'<text x="56" y="112" font-family="{SERIF}" font-size="26" fill="{t["ink"]}">{total} technologies across {len(inv)} domains, in this codebase</text>'
         f'<text x="{SX0}" y="112" dx="0" font-family="{MONO}" font-size="12" letter-spacing="2" fill="{t["faint"]}"></text>'
         f'<text x="{SX0}" y="{H-74}" font-family="{MONO}" font-size="12" letter-spacing="2" fill="{t["dim"]}">400 nm</text>'
         f'<text x="{SX1}" y="{H-74}" text-anchor="end" font-family="{MONO}" font-size="12" letter-spacing="2" fill="{t["dim"]}">700 nm</text>'

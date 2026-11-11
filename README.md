@@ -3,11 +3,18 @@
   <img src="assets/light/hero.svg" width="100%" alt="Akshay Bajpai. Wrangling AI, mostly after dark. I build production LLM systems that answer to humans: agents, retrieval, and text-to-SQL that shows its work and waits for a person before it runs.">
 </picture>
 
+<p align="center">
+  <a href="https://www.akshaybajpai.com"><b>akshaybajpai.com</b></a>
+  &nbsp;&nbsp;✦&nbsp;&nbsp;
+  <a href="https://github.com/ax5hay"><b>github.com/ax5hay</b></a> <sub>(personal)</sub>
+</p>
 
 <br>
 
 > [!NOTE]
-> **Why this profile looks empty.** This is my work account, and apart from this page everything it holds is private. The plates below are drawn from the git history behind it.
+> **About this page.** This is my work account, and this README covers only the work I do at Telomere. It is not my full tech stack or a record of everything I build. My personal projects, open-source work and the wider set of tools I use are on my [personal GitHub](https://github.com/ax5hay) and [website](https://www.akshaybajpai.com), and they cover a good deal more than this page does.
+>
+> Apart from this page, everything on this account is private. The plates below are drawn from its git history.
 
 <br>
 
@@ -60,26 +67,20 @@ I wrote most of that codebase: two of every three commits, the agent loops, the 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/dark/spectra.svg">
-  <img src="assets/light/spectra.svg" width="100%" alt="Spectra. 333 technologies across 13 domains, each domain drawn as an emission spectrum with one line per technology: languages, frontend, charts, backend, AI and LLM systems, machine learning, vision and documents, data stores, infrastructure, observability and security, testing, desktop and edge, integrations.">
+  <img src="assets/light/spectra.svg" width="100%" alt="Spectra. 78 technologies across 7 domains in this codebase, each domain drawn as an emission spectrum with one line per technology: languages, AI and LLM systems, backend, data stores, cloud and infrastructure, frontend, and testing.">
 </picture>
 
 <details>
-<summary><b>Every line in the spectra, as text</b> <sub>(searchable)</sub></summary>
+<summary><b>Every line in the spectra, as text</b> <sub>(this codebase only)</sub></summary>
 <br>
 
-- **Languages.** TypeScript, Python, JavaScript, C#, Rust, SQL, Bash, HTML & CSS, SCSS, Cypher, HCL, Google Apps Script
-- **Frontend & UI.** React, Next.js, Angular, Astro, Svelte 5, Vite, Create React App, Tailwind CSS, Sass, Bootstrap, Radix UI, shadcn/ui, React Aria, Framer Motion, TanStack Query, Zustand, React Router, RxJS, Storybook, Lucide, Quill, Swiper, remark / rehype, Transloco i18n, View Transitions API, JSON-LD / schema.org, Satori, resvg, cmdk, CodeMirror, Sonner, Liquid Glass (SVG lensing)
-- **Charts & dataviz.** Recharts, Observable Plot, uPlot, Apache ECharts, Charts.css, Matplotlib, Seaborn, Plotly
-- **Backend & APIs.** Node.js, Fastify, NestJS, Express, FastAPI, Starlette, Flask, Uvicorn, Gunicorn, ASP.NET Core, .NET 8 / 10, Socket.IO, WebSockets, SignalR, Server-sent events, AG-UI event stream, OpenAPI / Swagger, Zod, Pydantic, class-validator, Joi, JWT, OpenID Connect, ASP.NET Identity, Argon2, bcrypt, Helmet, Rate limiting, BullMQ, Hangfire, APScheduler, Lease-based job queue, node-cron, Polly, AutoMapper, Multer, Axios / httpx, aiohttp, Flurl, reqwest, tokio, serde, thiserror, parking_lot, chrono
-- **AI & LLM systems.** OpenAI API, Anthropic Claude, Google Gemini, Ollama, LM Studio, Pydantic AI, OpenRouter, LangChain, RAG pipelines, Text-to-SQL agents, MCP servers, LLM guardrails, Prompt & schema contracts, Model cascades, Prompt caching, pydantic-evals, Arize Phoenix, sentence-transformers, fastembed, FAISS, BM25, Reciprocal rank fusion, Weaviate, tiktoken, natural / compromise NLP, fuzzy matching, faster-whisper, Vosk, SpeechBrain, Piper TTS, edge-tts, pyttsx3
-- **Machine learning & data science.** PyTorch, torchvision, TensorFlow, Keras, scikit-learn, imbalanced-learn, SHAP, NumPy, pandas, SciPy, scikit-image, joblib, h5py, ndarray (Rust), ONNX, ONNX Runtime, Jupyter, yfinance, jStat, Federated learning, CNNs, RNNs & GRUs, GANs, Anomaly detection
-- **Vision, audio & documents.** OpenCV, YOLO / Ultralytics, MediaPipe, dlib, supervision, Pose & posture estimation, PPE detection, ANPR (number plates), Multi-signal threat scoring, Pillow, imutils, RTSP ingest, FFmpeg, PyAV, MoviePy, sounddevice / pydub, EasyOCR, Tesseract, PyMuPDF, pdfplumber, PyPDF2, pdf-parse / pdf.js, Docnet, ReportLab, python-docx, EPUB (VersOne), NetVips, sharp, node-canvas, QR codes, ExcelJS / xlsx, openpyxl, CsvHelper
-- **Data stores & ORMs.** PostgreSQL, MySQL / MariaDB, Redis, SQLite, SQLite FTS5, Neo4j, MinIO / S3, Weaviate (vector), FAISS (vector), pgvector, Supabase, Prisma, Drizzle ORM, SQLAlchemy, Alembic, asyncpg, psycopg, sqlglot (SQL ASTs), Entity Framework Core, PL/pgSQL, PostgreSQL row-level security, JSONB storage, cache-manager / EasyCaching, Google Sheets as a store
-- **Infrastructure & delivery.** Docker, Docker Compose, Kubernetes, Helm, Terraform, Ansible, AWS, AWS CDK, AWS Lambda, Amazon SQS, API Gateway WebSockets, Mangum, Amazon EKS, Amazon RDS, ElastiCache, Amazon ECR, VPC networking, vSphere, Nginx, GitHub Actions, Dependabot, GitHub Pages, GitHub Releases, Signed auto-updates, NSIS & DMG installers, Relocatable Python runtime, Docker Buildx, crane, Turborepo, pnpm workspaces, npm workspaces, uv, Make, Air-gapped, zero-trust deploys
-- **Observability & security.** Prometheus, Grafana, Loki & Promtail, OpenTelemetry, Arize Phoenix tracing, Pino, Winston, Loguru, Serilog, tracing (Rust), Trivy, oauth2-proxy, OS credential store (keyring), Content Security Policy, Secret & PII detection, CodeQL / SARIF, SonarAnalyzer, Codecov, Husky & lint-staged, commitlint, pre-commit, AES-GCM / ring, rustls, cryptography (py), SHA-2 / HMAC, Data Protection API
-- **Testing & code quality.** Vitest, Jest, pytest, pytest-asyncio, Playwright, Selenium, Testing Library, jsdom, Supertest, xUnit, NSubstitute, BenchmarkDotNet, criterion (Rust), cargo test, Clippy (pedantic), rustfmt, svelte-check, Golden-set evals, Metamorphic SQL probes, Karma, ESLint, typescript-eslint, Prettier, Ruff, Black, mypy, Pylint, flake8, markdownlint, Storybook a11y
-- **Desktop, edge & automation.** Tauri 2, Electron, electron-vite, electron-builder, System tray & menu bar apps, Win32 power requests, IOKit / Core Foundation, Global hotkeys, PySide6 / Qt, Tkinter, Streamlit, NiceGUI, Rust edge agent, sysinfo, Windows API (Rust), Playwright automation, Selenium scraping, BeautifulSoup / lxml, Cheerio, HtmlAgilityPack, SurveyCTO, ngrok
-- **Integrations & services.** Twilio, WhatsApp & Instagram channels, Nodemailer, MailKit, Google Sheets API, Google Calendar, Apps Script / clasp, Naukri.com automation, OpenGraph & sitemaps, Webhooks
+- **Languages.** Python, TypeScript, SQL (MySQL), Bash, PowerShell, YAML
+- **AI & LLM systems.** OpenRouter, Anthropic Claude, LLM gateway, Prompt caching, Agentic tool loop, Text-to-SQL agent, Workflow RAG, Knowledge-base RAG, Grounding pipeline, BM25 retrieval, Embeddings, Reranking, Persona engine, LLM consistency checks, Multi-slot extraction, PII redaction, pypdf, python-docx
+- **Backend & APIs.** FastAPI, Uvicorn, Pydantic, pydantic-settings, httpx, requests, PyJWT, JWT tenant routing, python-multipart, Mangum, WebSockets, Webhooks, cryptography
+- **Data stores & SQL.** MySQL 8, Redis 7, SQLAlchemy 2.0, Alembic, PyMySQL, sqlglot (SQL ASTs), Per-tenant schema routing
+- **Cloud & infrastructure.** AWS CDK, AWS Lambda, API Gateway, API Gateway WebSockets, Amazon SQS, Amazon RDS, ElastiCache, VPC & security groups, IAM, Secrets Manager, SSM Parameter Store, KMS, Amazon S3, CloudWatch, boto3, aws-vault, Docker, Docker Compose, Multi-region deploys
+- **Frontend.** React 18, Preact, Vite, Fontsource
+- **Testing & quality.** pytest, pytest-asyncio, pytest-cov, Playwright, Vitest, Ruff, mypy, pre-commit, Schema test harness, GitHub Actions, Streamlit (deploy console)
 
 </details>
 
@@ -110,4 +111,4 @@ The objects in the plates above, numbered the way astronomers number theirs. Bot
   <img src="assets/light/dawn.svg" width="100%" alt="Dawn over the horizon. Lights off at dawn. Shipped by morning.">
 </picture>
 
-<p align="center"><sub>Every plate is drawn by <a href="scripts/draw.py"><code>scripts/draw.py</code></a> from <a href="data/">data/</a>, and switches between a night sky and a printed star atlas with your theme. Observed 12 Nov 2026.</sub></p>
+<p align="center"><sub>Every plate is drawn by <a href="scripts/draw.py"><code>scripts/draw.py</code></a> from <a href="data/">data/</a>, and switches between a night sky and a printed star atlas with your theme. Observed 12 Nov 2026. Personal work: <a href="https://github.com/ax5hay">github.com/ax5hay</a> · <a href="https://www.akshaybajpai.com">akshaybajpai.com</a></sub></p>
