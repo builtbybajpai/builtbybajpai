@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-OBSERVED = "12 Nov 2026"
+OBSERVED = "24 Nov 2026"
 
 SERIF = "Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif"
 MONO = "ui-monospace, 'SF Mono', 'Cascadia Mono', 'Segoe UI Mono', Consolas, Menlo, monospace"
@@ -242,11 +242,11 @@ def magnitudes(t: dict, n_commits: int, after_dark_pct: int) -> str:
     defs, bg = sky_bg(W, H, t, "skym")
     defs += glow_filter("gm", 3)
     cells = [
-        ("775", "contributions this year", "all of them since first light in May", t["gold"]),
-        ("662", "commits to the AI platform", "68% of every commit in that repo", t["cyan"]),
-        ("107", "pull requests opened", "76 merged, the rest in review", t["violet"]),
-        ("2,683", "files touched", "backend, agents, infra and UI", t["cyan"]),
-        ("8,000+", "columns the reports agent reads", "across 193 tables, all approved", t["violet"]),
+        ("1,086", "contributions this year", "all of them since first light in May", t["gold"]),
+        ("942", "commits to the AI platform", "74% of every commit in that repo", t["cyan"]),
+        ("131", "pull requests opened", "97 merged, 28 still open", t["violet"]),
+        ("2,752", "files touched", "backend, agents, infra and UI", t["cyan"]),
+        ("746", "columns the reports agent reads", "across 79 tables, all validated", t["violet"]),
         (f"{after_dark_pct}%", "of commits land after dark", "between 18:00 and 05:00 IST", t["gold"]),
     ]
     body = [bg, scatter_stars(W, H, t, 70, "mag-field", twinkle=0.3)]
@@ -270,7 +270,12 @@ def magnitudes(t: dict, n_commits: int, after_dark_pct: int) -> str:
         )
         if i % 3:
             body.append(f'<line x1="{cx-6}" y1="{cy+18}" x2="{cx-6}" y2="{cy+128}" stroke="{t["rule"]}" stroke-width="1"/>')
-    return frame(W, H, t, "Magnitudes: 775 contributions this year; 662 commits to the AI platform, 68% of the repo; 107 pull requests, 76 merged; 2,683 files touched; 8,000+ columns across 193 tables; 80% of commits after dark.", "".join(body), defs, TWINKLE)
+    alt = (
+        "Magnitudes: 1,086 contributions this year; 942 commits to the AI platform, 74% of the repo; "
+        "131 pull requests, 97 merged; 2,752 files touched; 746 validated columns across 79 tables; "
+        f"{after_dark_pct}% of commits after dark."
+    )
+    return frame(W, H, t, alt, "".join(body), defs, TWINKLE)
 
 
 # ───────────────────────────── PLATE III · SKY CHART ─────────────────────────────
@@ -299,7 +304,7 @@ def sky_chart(t: dict, commits: list[tuple[datetime, int]]) -> str:
     W, H = 1200, 760
     X0, X1, YT, YB = 120, 1140, 128, 512
     start = datetime(2026, 6, 1)
-    end = datetime(2026, 11, 13)
+    end = datetime(2026, 11, 25)
     span = (end - start).total_seconds()
 
     def X(dt: datetime) -> float:

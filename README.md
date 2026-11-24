@@ -26,20 +26,20 @@ I'm an AI engineer at **Telomere**. Most of my time goes into a **multi-tenant A
 - **Knowledge** answers questions from each agency's own documents.
 - **Reports** lets an admin ask for a report in plain English. It writes the SQL, shows a preview, and runs the query only after the admin confirms.
 
-I wrote most of that codebase: two of every three commits, the agent loops, the safety gates, the AWS infrastructure, and the tests and runbooks around them. Most of it was written at night, as the sky chart below shows.
+I wrote most of that codebase: three of every four commits, the agent loops, the safety gates, the AWS infrastructure, and the tests and runbooks around them. Most of it was written at night, as the sky chart below shows.
 
 <br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/dark/magnitudes.svg">
-  <img src="assets/light/magnitudes.svg" width="100%" alt="Magnitudes. 775 contributions this year, all since May. 662 commits to the AI platform, 68% of every commit in that repository. 107 pull requests opened, 76 merged. 2,683 files touched. 8,000+ columns across 193 tables that the reports agent can read. 80% of commits land between 18:00 and 05:00 IST.">
+  <img src="assets/light/magnitudes.svg" width="100%" alt="Magnitudes. 1,086 contributions this year, all since May. 942 commits to the AI platform, 74% of every commit in that repository. 131 pull requests opened, 97 merged. 2,752 files touched. 746 validated columns across 79 tables that the reports agent can read. 76% of commits land between 18:00 and 05:00 IST.">
 </picture>
 
 <br><br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/dark/sky.svg">
-  <img src="assets/light/sky.svg" width="100%" alt="Sky chart, June to November 2026. 540 commits plotted by day and hour, with night at the top. 433 of them, 80%, were made between 18:00 and 05:00 IST. The busiest hour is 21:00. A light curve underneath shows commits per week, brightest in October.">
+  <img src="assets/light/sky.svg" width="100%" alt="Sky chart, June to November 2026. 790 commits plotted by day and hour, with night at the top. 597 of them, 76%, were made between 18:00 and 05:00 IST. The busiest hour is 21:00. A light curve underneath shows commits per week, brightest in late October.">
 </picture>
 
 <br><br>
@@ -56,7 +56,7 @@ I wrote most of that codebase: two of every three commits, the agent loops, the 
 | Body | What it does | How it stays honest |
 | :--- | :--- | :--- |
 | **LLM gateway** | One gateway for every model call: per-bot keys, routing, prompt caching, fallbacks | Self-heals when a model disappears; no bot calls a provider directly |
-| **Reports** | An agentic tool loop that turns an admin's question into SQL over a 193-table schema | Grammar-checked against the product's own report builder; preview first, and nothing runs until an admin confirms; long turns go async over SQS and WebSockets |
+| **Reports** | An agentic tool loop that turns an admin's question into SQL over a validated 79-table schema | Grammar-checked against the product's own report builder; preview first, and nothing runs until an admin confirms; long turns go async over SQS and WebSockets |
 | **Knowledge** | Answers from the agency's knowledge base, scraped pages and uploaded documents | Scoped by audience (intended parents, surrogates, donors); a grounding pass checks each reply against its sources |
 | **Intake** | Walks applicants through the agency's real forms as a chat, in the right persona | Deterministic YAML rules plus LLM consistency checks raise risk flags, and every answer syncs back to the CRM |
 | **Underneath** | JWT tenant routing, Python and FastAPI, React and TypeScript, MySQL, Redis | AWS CDK per environment, staging plus up to three production regions, pytest and Playwright end to end |
@@ -93,7 +93,7 @@ The objects in the plates above, numbered the way astronomers number theirs. Bot
 | No. | Object | What it is | Instruments |
 | :-- | :-- | :-- | :-- |
 | `BJP 001` | **Agency AI platform** <sub>private · work</sub> | The system in the orrery: intake, knowledge and reports assistants for fertility and surrogacy agencies, with one gateway and one API | Python · FastAPI · React · AWS CDK · MySQL · Redis |
-| `BJP 002` | **Reports agent** <sub>private · work</sub> | Plain-English reporting over 193 tables and 8,000+ approved columns. Every query is grammar-checked, previewed, and confirmed by an admin before it runs | sqlglot · agentic tool loop · SQS · WebSockets |
+| `BJP 002` | **Reports agent** <sub>private · work</sub> | Plain-English reporting over 79 validated tables and 746 approved columns. Every query is grammar-checked, previewed, and confirmed by an admin before it runs | sqlglot · agentic tool loop · SQS · WebSockets |
 
 <br>
 
@@ -111,4 +111,4 @@ The objects in the plates above, numbered the way astronomers number theirs. Bot
   <img src="assets/light/dawn.svg" width="100%" alt="Dawn over the horizon. Lights off at dawn. Shipped by morning.">
 </picture>
 
-<p align="center"><sub>Every plate is drawn by <a href="scripts/draw.py"><code>scripts/draw.py</code></a> from <a href="data/">data/</a>, and switches between a night sky and a printed star atlas with your theme. Observed 12 Nov 2026. Personal work: <a href="https://github.com/ax5hay">github.com/ax5hay</a> · <a href="https://www.akshaybajpai.com">akshaybajpai.com</a></sub></p>
+<p align="center"><sub>Every plate is drawn by <a href="scripts/draw.py"><code>scripts/draw.py</code></a> from <a href="data/">data/</a>, and switches between a night sky and a printed star atlas with your theme. Observed 24 Nov 2026. Personal work: <a href="https://github.com/ax5hay">github.com/ax5hay</a> · <a href="https://www.akshaybajpai.com">akshaybajpai.com</a></sub></p>
